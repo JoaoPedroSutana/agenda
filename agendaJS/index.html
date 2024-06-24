@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="website icon" type="png" href="logo.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h3>Cadastro de Contato</h3>
+    <section>
+        <div class="cont">
+            <div id="AB">
+                <div class="box">
+                    <section class="nomes">
+                        <section class="N">
+                            <label for="nome">NOME</label>
+                            <input type="text" id="nome" readonly class="campos">
+                            <span id="erro"></span>
+                        </section>
+                        <section class="S">
+                            <label for="sobrenome">SOBRENOME</label>
+                            <input type="text" id="sobre" readonly class="campos">
+                        </section>
+                    </section>
+                    <label for="endereço">ENDEREÇO</label>
+                    <input type="text" id="ende" readonly class="campos">
+                    <label for="telefone">TELEFONE</label>
+                    <input type="text" id="tele" readonly class="campos">
+                </div>
+            </div>
+            <div class="but">
+                <button id="in" class="button:disabled" onclick="incluir()">INCLUIR</button>
+                <button id="ed" class="button:disabled" disabled onclick="editar()">EDITAR</button>
+                <button id="sa" class="button:disabled" disabled onclick="salvar()">SALVAR</button>
+                <button id="ca" class="button:disabled" disabled onclick="cancelar()">CANCELAR</button>
+                <button id="ex" class="button:disabled" disabled onclick="excluir()">EXCLUIR</button>
+            </div>
+    </section>
+        <div id="AB">
+            <div class="nave">
+                <button id="botaoPrimeiro" onclick="primeiroContato()">|<</button>
+                <button id="botaoAnterior" onclick="contatoAnterior()"><</button>
+                <button id="botaoProximo" onclick="proximoContato()">></button>
+                <button id="botaoUltimo" onclick="ultimoContato()">>|</button>
+            </div>
+        </div>
+    </div>
+    <footer>AGENDA DE CONTATOS</footer>
+    <script src="index.js"></script>
+</body>
+</html>
